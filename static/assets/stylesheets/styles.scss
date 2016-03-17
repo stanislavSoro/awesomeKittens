@@ -1,0 +1,28 @@
+@import "../vendors/susy/sass/susy";
+@import "../vendors/bourbon/app/assets/stylesheets/bourbon";
+
+@import "animations";
+@import "mixins";
+@import "colors";
+@import "variables";
+@import "products";
+
+$susy: (
+  columns: 12, 
+  container: 100%,
+  height: 100%,
+  gutters: 0,
+  global-box-sizing: border-box
+);
+
+* {
+	font-family: sans-serif;
+	transition: 0.2s all ease-out;
+}
+
+html { box-sizing: border-box; }
+* { box-sizing: inherit; }
+
+.main {
+  @include container;
+}

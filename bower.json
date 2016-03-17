@@ -1,0 +1,31 @@
+{
+  "name": "discount-ascii-warehouse",
+  "description": "For all your ascii needs.",
+  "main": "index.js",
+  "authors": [
+    "Stanislav Sorokin <stanislav.sorokin@linkinlive.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "susy": "~2.2.7",
+    "bourbon": "~4.2.6",
+    "oboe": "~2.1.2"
+  },
+  "resolutions": {
+    "angular": "~1.4.8"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.0"
+  }
+}

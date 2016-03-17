@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html' charset='utf-8')
+    title Discount Ascii Warehouse
+    
+  body(ng-app='discountWarehouse')
+    .main(ui-view)
+
+    //injection block
+      
+    - if (liveReloadPort) // enable live reload in development mode
+      script(src='//localhost:#{liveReloadPort}/livereload.js')
+
+    - if (!isDevMode) // add app.js only in production
+      script(async src='/js/app.min.js')
+
+    <!-- injector:bower:js -->
+    <!-- endinjector -->
+
+    <!-- injector:js -->
+    <!-- endinjector -->
+
+    - if (isDevMode) // add templates.js file in development mode
+        script(src='/tmp/templates.js')
+
+link(rel='stylesheet', type='text/css', href='/stylesheets/styles.css')
